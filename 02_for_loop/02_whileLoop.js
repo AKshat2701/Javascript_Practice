@@ -91,15 +91,17 @@
 
 
 // Reverse a number
-let n = 234234234
+// let n = 234234234
 
-let rev = 0 
+// let rev = 0 
 
-while(n > 0)
-{
-    let digit = n % 10 
-    rev = rev * 10 + digit
-    n = Math.floor(n/10)
+// while(n > 0)
+// {
+//     let digit = n % 10 
+//     rev = rev * 10 + digit
+//     n = Math.floor(n/10)
 
-}
-console.log(rev)
+// }
+// console.log(rev)
+
+
