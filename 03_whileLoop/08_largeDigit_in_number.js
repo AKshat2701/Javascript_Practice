@@ -1,17 +1,17 @@
-let num = 5839
+let num = 84938459
 
-let maxDigit = 0 
 
-while(num > 0)
+let max = 0 
+
+while( num > 0)
 {
-    let ld = num % 10
-
-    if (ld > maxDigit)
+    let lastDig = num % 10
+    if (lastDig > max)
     {
-        maxDigit = ld
+        max = lastDig
     }
-
-    num = Math.floor(num / 10 )
+    num = Math.floor(num/10)
 }
 
-console.log("Largest digit = ", maxDigit)
+console.log(max)
+
