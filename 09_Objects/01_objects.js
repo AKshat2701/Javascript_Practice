@@ -142,19 +142,33 @@
 // }
 
 
+// const user = {
+//     name : "Akshat",
+//     age : 20,
+//     emailId : "akshatsri2710@gmail.com",
+//     amount : 34000,
+//     greeting : function()
+//     {
+//         console.log(`Strick is comming on 18 oct ${this.name}`)
+//         return 20
+//     }
+// }
+
+// const user2 = {
+//     name : "Mohan",
+//     account : 201,
+// }
+
+// user2.greeting = user.greeting
+// console.log(user2)
+// user2.greeting()
+
+
+
+
+
 const user = {
-    name : "Akshat",
+    name : "AKshat",
     age : 20,
-    emailId : "akshatsri2710@gmail.com",
-    amount : 34000,
-    greeting : function()
-    {
-        console.log(`Strick is comming on 18 oct ${this.name}`)
-        return 20
-    }
+    emailId
 }
-
-const via = user.greeting()
-console.log(via)
-
-
