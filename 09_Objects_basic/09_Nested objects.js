@@ -22,3 +22,28 @@
 
 // const {address : {city}} = user1;
 // console.log(city)
+
+console.log("--------------------------")
+
+
+// const user =
+// {
+//     name : "Akshat", 
+//     age : 23, 
+//     address : "lucknow"
+// }
+
+// const stringJson = JSON.stringify(user)
+
+// console.log(stringJson)
+
+
+
+
+// const jsonString = '{"name":"Akshat","age":24}';
+
+// const obj = JSON.parse(jsonString)
+// console.log(obj.name)
+
+
+
