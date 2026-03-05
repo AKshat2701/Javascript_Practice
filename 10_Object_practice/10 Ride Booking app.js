@@ -29,7 +29,6 @@ const details =
 
     endRide()
     {
-        
         console.log(`You've reached the distination`)
     },
 
