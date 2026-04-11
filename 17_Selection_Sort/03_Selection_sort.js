@@ -1,25 +1,23 @@
-function selectionSort(arr)
+const selectionSort = (number) =>
 {
-    for(let i = 0 ; i < arr.length ; i++)
+    for(let currIdx  = 0 ; currIdx < number.length ; currIdx++)
     {
-        let min = i 
+        let minIdx = currIdx ; 
 
-        for(let j = i + 1 ; j < arr.length ; j++)
+        for(let scanIdx = currIdx + 1 ; scanIdx < number.length ; scanIdx++)
         {
-            if(arr[j] < arr[min])
+            if(number[scanIdx] < number[currIdx])
             {
-                min = j ; 
+                minIdx = scanIdx ;
             }
         }
-
-        if(i!==min)
-        {
-            temp = arr[i]
-            arr[i] = arr[min]
-            arr[min] = temp ;
+        if (minIdx !== currIdx) {
+            const temp = number[currIdx];
+            number[currIdx] = number[minIdx];
+            number[minIdx] = temp;
         }
     }
-    return arr; 
+    return number
 }
 
-console.log(selectionSort([0,2,32,22,10,29]))
+console.log(selectionSort([56,4,493,95,57,85,29,4,5]))
