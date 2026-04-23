@@ -22,7 +22,6 @@ const indexOfsecondLargest = (nums) =>
             secondMax = nums[i]
             secondmaxIndex = i ; 
         }
-            
     }
     return secondmaxIndex;
 }
