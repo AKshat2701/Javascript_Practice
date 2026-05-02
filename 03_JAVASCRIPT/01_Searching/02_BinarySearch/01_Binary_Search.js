@@ -11,29 +11,29 @@ let arr = [1,2,3,4,5,7,9,19,31,53,95]
 const BinarySerch = (arr, target) =>
 {
     
-    let start = 0 ;
+    let start = 0 ; 
     let end = arr.length - 1 ; 
     
-    while(start <= end)
+    while(start<= end)
     {
-        let mid = start + Math.floor((end - start)/2)
-        let elem = arr[mid]
+        let mid = start + Math.floor((end-start)/2)
 
-        if(elem == target)
+
+        if(target == arr[mid])
         {
             return mid
         }
-        else if(target < elem)
+        else if(target > arr[mid])
         {
-            end = mid - 1; 
+            start = mid + 1;
+
         }
         else 
         {
-            start = mid + 1
+            end = mid - 1 
         }
-        
     }
-    return - 1 
+    return -1 
 }
 
 console.log(BinarySerch(arr, 95))
