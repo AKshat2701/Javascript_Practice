@@ -1,0 +1,11 @@
+In this folder i am learning JS in this order 
+
+Higher-Order Functions
+↓
+Callbacks
+↓
+Promises
+↓
+Async/Await
+
+Hoping for the best . 
