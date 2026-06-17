@@ -16,3 +16,5 @@ const checkElem = (arr, target) =>
 
 console.log(checkElem(nums, 8))
 
+
+

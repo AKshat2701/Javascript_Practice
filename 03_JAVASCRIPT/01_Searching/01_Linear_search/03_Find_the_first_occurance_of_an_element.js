@@ -1,44 +1,40 @@
+// find first occurance 
 
-let arr = [94,5,49,39,20,8,58,8,8,85]
-
-const findFirstOcc = (arr, target) =>
+const firstOcc = (arr, target) =>
 {
-    for(let i = 0 ; i < arr.length ; i++)
+    for(let i = 0 ; i < arr.length ; i++ )
     {
-        if( arr[i] == target)
+        if(arr[i] === target)
         {
-            return `${target} is in ${i}`
+            return i ; 
         }
     }
-    return -1
+
+    return -1 ; 
 }
 
-let output = findFirstOcc(arr, 85)
-console.log(output)
+
+console.log(firstOcc([93,23,92,94,23,98,75], 23))
 
 
 
-const secondOccurance = (arr, target) =>
+
+const secondOcc = (arr, target) =>
 {
-    
-    let count = 0 ; 
-
+    let count = 0 ;
     for(let i = 0 ; i < arr.length ; i++)
     {
         if(arr[i] === target)
         {
-            count++
+            count++ ; 
         }
 
-        if(count === 3 )
+        if(count == 2 )
         {
-            return i 
+            return i ; 
         }
     }
-    return -1 
+    return -1 ; 
 }
 
-
-const getSecondIndex = secondOccurance(arr, 8)
-
-console.log(getSecondIndex)
+console.log(secondOcc([93,23,92,94,23,98,75],23))
