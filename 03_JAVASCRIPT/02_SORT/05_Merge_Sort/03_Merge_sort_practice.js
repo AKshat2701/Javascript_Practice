@@ -1,43 +1,40 @@
 function merge(arr, first, mid, last)
 {
-    let tempArr = new Array(last - first + 1)
+    let temp = new Array(last - first + 1 )
 
-    let i = first;
-    let j = mid + 1 ;
+    let i = first ;
+    let j = mid + 1; 
 
-    let k = 0 ; 
+    let k = 0 ;
 
-    while(i <= mid && j <= last)
+    while( i <= mid && j <= last)
     {
         if(arr[i] < arr[j])
         {
-            tempArr[k++] = arr[i++]
+            temp[k++] = arr[i++]
         }
         else 
         {
-            tempArr[k++] = arr[j++]
+            temp[k++] = arr[j++]
         }
     }
 
     while(i <= mid)
     {
-        tempArr[k] = arr[i]
-        k++, i++; 
+        temp[k++] = arr[i++]
     }
 
-    while(j <= last)
+    while( j <= last)
     {
-        tempArr[k] = arr[j]
-        k++, j++ ;
+        temp[k++] = arr[j++]
     }
 
-    let p = 0 ;
-    let t = first ;
-
-    while(p < tempArr.length)
+    let p = 0 ; 
+    let t = first ; 
+    while( p < temp.length)
     {
-        arr[t] = tempArr[p]
-        t++ , p++ ; 
+        arr[t] = temp[p]
+        t++, p++ ; 
     }
 }
 
@@ -45,17 +42,17 @@ function divide(arr, first, last)
 {
     if(first >= last) return ; 
 
-    let mid = Math.floor((first+last)/2 )
+    let mid = Math.floor((first + last)/2 )
 
-    divide(arr, first, mid)
+    divide(arr, first, mid )
     divide(arr, mid + 1, last)
 
-    merge(arr, first,mid ,last)
+    merge(arr ,first, mid , last)
 
 }
 
-let arr = [32,85,75,9,5,3,8,36,7,6,5,4,3,]
+let arr = [98,5,6,4,3,6,2,86,34,6]
 
-divide(arr, 0 , arr.length - 1 )
+divide(arr, 0, arr.length - 1 )
 
 console.log(arr)
