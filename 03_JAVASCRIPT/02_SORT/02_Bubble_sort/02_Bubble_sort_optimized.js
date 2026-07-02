@@ -1,23 +1,28 @@
-let arr = [ 49,59,68,4,34,23,64]
-
 function bubbleSort(arr)
 {
     let n = arr.length ; 
 
-    for(let i = 0 ; i < n ; i++)
+    for(let i = 0 ; i < n - 1 ; i++)
     {
-        let swapped = false; 
+        let swapped = true ; 
+
         for(let j = 0 ; j < n - i - 1 ; j++)
         {
             if(arr[j] > arr[j+1])
             {
-                [arr[j], arr[j+1]== [arr[j+1],[arr[j]]]]
+                let temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp ; 
+
                 swapped = true ; 
             }
         }
-        if(!swapped) break;
+        if(!swapped)
+        {
+            break
+        }
     }
-    return arr; 
+    return arr ; 
 }
-
+let arr = [57,4,5,7,3,57,87,54,5,7]
 console.log(bubbleSort(arr))
