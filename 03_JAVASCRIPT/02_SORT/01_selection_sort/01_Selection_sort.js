@@ -1,26 +1,30 @@
-let arr = [85,38,8,43,7,38,12]
+let arr = [ 5,3,7,9,1, 4]
 
 
 function selectionSort(arr)
 {
-    let n = arr.length ;
+    let n = arr.length ; 
 
-    for(let i = 0 ;i < n ; i++)
+    for(let i = 0 ; i < n - 1 ; i++)
     {
-        let minIndex = i ;
+        let minIndex = i ; 
 
         for(let j = i + 1 ; j < n ; j++)
         {
-            if(arr[j] < arr[minIndex])
+            if(arr[minIndex] > arr[j])
             {
                 minIndex = j 
             }
         }
-        if(minIndex !== i)
+        if(minIndex != i)
         {
-            [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]
+            let temp = arr[minIndex]
+            arr[minIndex] = arr[i]
+            arr[i] = temp ; 
         }
     }
     return arr ; 
 }
+
+
 console.log(selectionSort(arr))
