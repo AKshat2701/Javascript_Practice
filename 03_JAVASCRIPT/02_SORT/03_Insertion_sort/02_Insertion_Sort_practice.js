@@ -1,27 +1,20 @@
-
-
-function selectionSort(arr)
+function insertionSort(arr)
 {
     let n = arr.length ; 
 
     for(let i = 1 ; i < n ; i++)
     {
         let key = arr[i]
+        let j = i - 1 ; 
 
-        let j = i - 1 ;
-
-        while( j >= 0  && arr[j] > key)
+        while( j >= 0 && arr[j] > key)
         {
-            arr[j + 1 ] = arr[j]
+            arr[j + 1] = arr[ j ]
             j-- ; 
         }
-        arr[j + 1] = key ; 
-    }
-
+        arr[ j + 1] = key ; 
+    } 
     return arr ; 
-
 }
-
-
-let arr  = [85,34,8,54,99,23,8,54]
-console.log(selectionSort(arr))
+let arr = [8,5,2,1,9,54,91]
+console.log(insertionSort(arr))
