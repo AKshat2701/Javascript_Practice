@@ -1,5 +1,5 @@
 
-
+//Recursion sum of n Natural numbers 
 
 function sumOfn(n)
 {
@@ -8,5 +8,4 @@ function sumOfn(n)
     return n + sumOfn(n-1)
     
 }
-
 console.log(sumOfn(6))
