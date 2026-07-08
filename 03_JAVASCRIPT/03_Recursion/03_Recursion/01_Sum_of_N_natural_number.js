@@ -8,4 +8,4 @@ function sumOfn(n)
     return n + sumOfn(n-1)
     
 }
-console.log(sumOfn(6))
+console.log(sumOfn(6))  
