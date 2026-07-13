@@ -176,3 +176,4 @@ function insertionSort(arr)
 
 let arr = [9,10,8,7,6,4,1,5,3]
 console.log(insertionSort(arr))
+
