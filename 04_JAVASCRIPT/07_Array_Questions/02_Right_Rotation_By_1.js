@@ -3,7 +3,7 @@ function RightRotation(arr)
     let n = arr.length ; 
     let copy = arr[arr.length - 1 ]
 
-    for(let i = arr.length - 1 ; i > 0 ; i-- )
+    for(let i = n - 1 ; i > 0 ; i-- )
     {
         arr[i] = arr[i - 1]
     }
