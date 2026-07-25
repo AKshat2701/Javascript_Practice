@@ -1,0 +1,11 @@
+console.log(power(2,6))
+
+function power(x, y)
+{
+    if(y < 1 )
+    {
+        return 1  ; 
+    }
+    
+    return x * power(x , y - 1 )
+}
