@@ -1,21 +1,19 @@
-function check(str)
-{
-    function helper(str, s , e)
-    {
-        if(s >= e)
-        {
-            return true; 
-        }
+let s = "NAMAN"
 
-        if(str[s] != str[e])
+
+
+function palindrome(str, start = 0, end = str.length - 1 )
+{
+    if(start >= end)
+        {
+        return true;
+    }
+    
+    if(str[start ] != str[end])
         {
             return false ;
         }
-
-        return helper(str, s + 1 , e - 1)
+        
+        return palindrome(str, start + 1, end - 1 )
     }
-
-    return helper(str, 0, str.length - 1 )
-}
-
-console.log(check("NAMAN"))
+console.log(palindrome(s))
